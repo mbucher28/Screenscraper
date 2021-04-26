@@ -18,7 +18,7 @@ import os
 source = urllib.request.urlopen("https://www.baseball-reference.com/leagues/MLB/bat.shtml")
 soup = (BeautifulSoup(source, "html.parser"))
 
-filename = "SportsDataFinal1.csv"
+filename = "MLB_Data.csv"
 f = open(os.path.expanduser(filename), "wb")
 header = "Teams~#Bat~BatAge~R/G~G~PA~AB~R~H~2B~3B~HR~RBI~SB~CS~BB~SO~BA~OBP~SLG~OPS~TB~GDP~HBP~SH~SF~IBB"
 f.write(bytes(header, encoding="ascii", errors='ignore'))
